@@ -1,0 +1,41 @@
+body {
+  background-color: #140e27;
+  color: #f5d042;
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  text-align: center;
+}
+
+.password-container {
+  margin-top: 20px;
+}
+
+input {
+  width: 300px;
+  padding: 10px;
+  font-size: 16px;
+  background-color: transparent;
+  border: 2px solid #f5d042;
+  color: #f5d042;
+  outline: none;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #f5d042;
+  border: none;
+  color: #140e27;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #f9e194;
+}
