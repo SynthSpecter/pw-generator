@@ -12,9 +12,24 @@
 <body>
    <div class="container">
       <h1>Synthwave Password Generator</h1>
+      <div class="password-options">
+         <div class="length-option">
+            <label for="password-length">Longueur du mot de passe:</label>
+            <input type="range" id="password-length" min="8" max="32" value="12">
+            <span id="length-value">12</span>
+         </div>
+         <div class="character-options">
+            <label><input type="checkbox" id="uppercase" checked> Majuscules</label>
+            <label><input type="checkbox" id="lowercase" checked> Minuscules</label>
+            <label><input type="checkbox" id="numbers" checked> Chiffres</label>
+            <label><input type="checkbox" id="symbols" checked> Symboles</label>
+         </div>
+      </div>
       <div class="password-container">
          <input type="text" id="password" readonly>
          <button id="generate-btn">Generate Password</button>
+         <div id="password-strength" class="password-strength"></div>
+         <button id="copy-btn">Copier</button>
       </div>
    </div>
 </body>

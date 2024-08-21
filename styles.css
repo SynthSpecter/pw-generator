@@ -39,3 +39,58 @@ button {
 button:hover {
   background-color: #f9e194;
 }
+
+.password-options {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.length-option {
+  margin-bottom: 10px;
+}
+
+.character-options label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type='range'] {
+  width: 200px;
+  margin-right: 10px;
+}
+
+input[type='checkbox'] {
+  margin-right: 5px;
+}
+
+#copy-btn {
+  margin-left: 10px;
+}
+
+.password-strength {
+  margin-top: 10px;
+  height: 5px;
+  background-color: #ddd;
+}
+
+.password-strength::before {
+  content: '';
+  display: block;
+  height: 100%;
+  transition: width 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.password-strength.weak::before {
+  width: 33%;
+  background-color: #ff4136;
+}
+
+.password-strength.medium::before {
+  width: 66%;
+  background-color: #ffdc00;
+}
+
+.password-strength.strong::before {
+  width: 100%;
+  background-color: #2ecc40;
+}
