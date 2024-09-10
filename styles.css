@@ -1,7 +1,12 @@
+@font-face {
+  font-family: Audiowide;
+  src: url(./Audiowide-Regular.ttf);
+}
+
 body {
   background-color: #140e27;
   color: #f5d042;
-  font-family: 'Arial', sans-serif;
+  font-family: 'Audiowide', sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
