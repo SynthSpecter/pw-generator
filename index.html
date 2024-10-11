@@ -6,18 +6,28 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="styles.css">
    <title>Synthwave Password Generator</title>
-   <script src="script.js"></script>
+   <!-- We will divide the JavaScript into multiple files -->
+   <!-- Nous allons diviser le JavaScript en plusieurs fichiers -->
+   <script src="./scripts/utils.js"></script>
+   <script src="./scripts/passwordGenerator.js"></script>
+   <script src="./scripts/main.js"></script>
 </head>
 
 <body>
-   <div class="container">
+   <main class="container">
       <h1>Synthwave Password Generator</h1>
+      <!-- Password generation options -->
+      <!-- Options de génération du mot de passe -->
       <div class="password-options">
+         <!-- Password length option -->
+         <!-- Option de longueur du mot de passe -->
          <div class="length-option">
             <label for="password-length">Longueur du mot de passe:</label>
             <input type="range" id="password-length" min="8" max="32" value="12">
             <span id="length-value">12</span>
          </div>
+         <!-- Character type options -->
+         <!-- Options des types de caractères -->
          <div class="character-options">
             <label><input type="checkbox" id="uppercase" checked> Majuscules</label>
             <label><input type="checkbox" id="lowercase" checked> Minuscules</label>
@@ -25,13 +35,15 @@
             <label><input type="checkbox" id="symbols" checked> Symboles</label>
          </div>
       </div>
+      <!-- Password display and controls -->
+      <!-- Affichage et contrôles du mot de passe -->
       <div class="password-container">
          <input type="text" id="password" readonly>
          <button id="generate-btn">Generate Password</button>
          <div id="password-strength" class="password-strength"></div>
          <button id="copy-btn">Copier</button>
       </div>
-   </div>
+   </main>
 </body>
 
 </html>

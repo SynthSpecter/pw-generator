@@ -1,8 +1,12 @@
+/* Custom font */
+/* Police personnalisée */
 @font-face {
   font-family: Audiowide;
   src: url(./Audiowide-Regular.ttf);
 }
 
+/* General styles */
+/* Styles généraux */
 body {
   background-color: #140e27;
   color: #f5d042;
@@ -14,37 +18,14 @@ body {
   margin: 0;
 }
 
+/* Main container */
+/* Conteneur principal */
 .container {
   text-align: center;
 }
 
-.password-container {
-  margin-top: 20px;
-}
-
-input {
-  width: 300px;
-  padding: 10px;
-  font-size: 16px;
-  background-color: transparent;
-  border: 2px solid #f5d042;
-  color: #f5d042;
-  outline: none;
-}
-
-button {
-  padding: 10px 20px;
-  font-size: 16px;
-  background-color: #f5d042;
-  border: none;
-  color: #140e27;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: #f9e194;
-}
-
+/* Password options */
+/* Options du mot de passe */
 .password-options {
   margin-top: 20px;
   text-align: left;
@@ -59,6 +40,18 @@ button:hover {
   margin-bottom: 5px;
 }
 
+/* Input styles */
+/* Styles des inputs */
+input {
+  width: 300px;
+  padding: 10px;
+  font-size: 16px;
+  background-color: transparent;
+  border: 2px solid #f5d042;
+  color: #f5d042;
+  outline: none;
+}
+
 input[type='range'] {
   width: 200px;
   margin-right: 10px;
@@ -68,10 +61,33 @@ input[type='checkbox'] {
   margin-right: 5px;
 }
 
+/* Password container */
+/* Conteneur du mot de passe */
+.password-container {
+  margin-top: 20px;
+}
+
+/* Button styles */
+/* Styles des boutons */
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #f5d042;
+  border: none;
+  color: #140e27;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #f9e194;
+}
+
 #copy-btn {
   margin-left: 10px;
 }
 
+/* Password strength indicator */
+/* Indicateur de force du mot de passe */
 .password-strength {
   margin-top: 10px;
   height: 5px;
